@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Message, Role } from '../types';
-import logo from '../src/assets/logo.png';
+import logo from '@/src/assets/logo.png';
 
 interface MessageBubbleProps {
   message: Message;
