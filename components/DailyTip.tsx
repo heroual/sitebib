@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import logo from '../src/assets/logo.png';
 
 const CloseIcon: React.FC = () => (
   <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -37,7 +38,7 @@ const DailyTip: React.FC<DailyTipProps> = ({ tip, onClose }) => {
     >
       <div className="flex items-start">
         <div className="flex-shrink-0">
-          <img src="/logo.png" alt="Si Tebib Logo" className="h-12 w-12 object-contain rounded-full" />
+          <img src={logo} alt="Si Tebib Logo" className="h-12 w-12 object-contain rounded-full" />
         </div>
         <div className="ml-3 w-0 flex-1 pt-0.5">
           <p className="text-lg font-bold text-gray-900">نصيحة اليوم</p>

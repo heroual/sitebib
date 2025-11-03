@@ -1,4 +1,5 @@
 import React from 'react';
+import logo from '../src/assets/logo.png';
 
 interface HeaderProps {
     onNavigate: (page: 'chat' | 'learn' | 'map') => void;
@@ -9,7 +10,7 @@ const Header: React.FC<HeaderProps> = ({ onNavigate, currentPage }) => {
   return (
     <header className="w-full bg-white shadow-md p-4 flex items-center justify-between border-b-4 border-[#c0392b]">
       <div className="flex items-center space-x-4">
-        <img src="/logo.png" alt="Si Tebib Logo" className="h-20 w-20 object-contain" />
+        <img src={logo} alt="Si Tebib Logo" className="h-20 w-20 object-contain" />
         <div>
             <h1 className="text-2xl md:text-3xl font-bold text-gray-800">Si Tebib</h1>
             <p className="text-sm md:text-base text-gray-600 italic">“The Moroccan doctor who heals with science, humor, and heart.”</p>

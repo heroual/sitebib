@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { Message, Role } from '../types';
+import logo from '../src/assets/logo.png';
 
 interface MessageBubbleProps {
   message: Message;
@@ -32,7 +33,7 @@ const MessageBubble: React.FC<MessageBubbleProps> = ({ message, showTypingIndica
 
   return (
     <div className={`flex items-end gap-2 ${isModel ? 'justify-start' : 'justify-end'}`}>
-      {isModel && <img src="/logo.png" alt="Si Tebib Logo" className="h-12 w-12 object-contain rounded-full" />}
+      {isModel && <img src={logo} alt="Si Tebib Logo" className="h-12 w-12 object-contain rounded-full" />}
       <div
         className={`max-w-[85%] px-4 py-3 rounded-2xl whitespace-pre-wrap ${
           isModel
