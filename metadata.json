@@ -1,0 +1,7 @@
+{
+  "name": "Si Tebib - Moroccan AI Doctor",
+  "description": "An AI character named 'Si Tebib', a Moroccan virtual doctor who provides medical advice, health education, and wellness tips in a warm, funny, and culturally authentic Moroccan way.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
